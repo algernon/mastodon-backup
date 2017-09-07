@@ -6,7 +6,7 @@
 
 BACKUPDIR="${BACKUPDIR:-$(pwd)/backup}"
 MASTODON_DIR="${MASTODON_DIR:-./public}"
-DESTDIR="${BACKUPDIR}/$(date +"%Y-%m-%d+%s")"
+DESTDIR="${BACKUPDIR}"
 install -d "${DESTDIR}"
 
 list_local_media() {
