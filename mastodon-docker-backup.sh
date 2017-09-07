@@ -26,6 +26,9 @@ list_local_media() {
     rm -f "${LMTMP}"
 }
 
+echo "* Copying configuratior..."
+cp ${MASTODON_DIR}/../.env.production ${MASTODON_DIR}/../docker-compose.yml ${DESTDIR}/
+
 echo "* Archiving local media..."
 cd "${MASTODON_DIR}"
 tar -cv --ignore-failed-read -f "${DESTDIR}/local-media.tar" $(list_local_media) 2>/dev/null
