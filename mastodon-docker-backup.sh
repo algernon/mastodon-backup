@@ -26,7 +26,7 @@ list_local_media() {
     rm -f "${LMTMP}"
 }
 
-echo "* Copying configuratior..."
+echo "* Copying configuration..."
 cp ${MASTODON_DIR}/../.env.production ${MASTODON_DIR}/../docker-compose.yml ${DESTDIR}/
 
 echo "* Archiving local media..."
